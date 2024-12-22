@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search</h1>
+    <form>
+        <div class="form-group">
+            <label for="search">Search</label>
+            <input type="text" class="form-control" id="data" placeholder="Enter a search term">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <div id="results">
+        <ul id="result-items"></ul>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="@Url.Content("~/js/search.js")"></script>
+}
